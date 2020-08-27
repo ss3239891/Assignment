@@ -1,13 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+* {
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body, html, .App, #root, .auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 15px;
+  
+  transition: all .3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+.card {
+  padding: 40px 55px 45px 55px;
+
+
+}
+.container {
+margin-left: 20%;
+margin-top: auto;
+margin-right: auto;
+
+}
+.borderC {
+border:1px solid rgb(148, 144, 144);
+
+}
+.borderbutton {
+  border:1px solid rgb(148, 144, 144);
+  
+  margin-left: 350px;
+  margin-right: 350px;
+  background-color: lightgray;
+
+  }
+  .borderbuttonform {
+    border:1px solid rgb(148, 144, 144);
+    
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-right: 120px;
+    background-color: lightgray;
+  
+    }
+.table {
+  border: rgb(102, 102, 102);
+  border-collapse: collapse;
+}
+.cell{
+  empty-cells: show;
+  
+}
+.logo {
+  border-radius: 2px;
+  border: #7f7d7d;
+}
+.input {
+  width: 150px;
+  padding: 0 20px ;
+  margin-right: 10px;
+  text-align: left;
+}
+.inputdropdown {
+  width: 100px;
+  padding: 10px 20px ;
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+.activeTab {
+ background-color: rgb(23, 23, 27);
+}
+.link {
+  color:black;
+}
+.button {
+
+  margin: 25px 5px 20px 20px;
+
 }
